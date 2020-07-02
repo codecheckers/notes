@@ -51,7 +51,7 @@ note them in your report.
 
 We use a file `codecheck.yml` in the root directory of the project to
 store the metadata for the certificate.  One easy way to create this
-is to copy a recent one from another repository (e.g. xxx). even
+is to copy a recent one from another repository (e.g. <https://github.com/codecheckers/covid19model-nature/blob/master/codecheck.yml>). even
 better, to use our R package, that will help you create the
 certificate.
 
@@ -75,4 +75,11 @@ Further details are available in our vignette
 `codecheck_overview.Rmd`. [link](https://rdrr.io/github/codecheckers/codecheck/f/vignettes/codecheck_overview.Rmd)
 
 
+The R package can also help with submitting the certificate and metadata to
+zenodo.
 
+
+## Getting help
+
+If you are stuck, don't hesitate to ping Stephen or Daniel with a
+query.
