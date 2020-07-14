@@ -60,7 +60,7 @@ session, do:
 
 ```
 install.packages("remotes")
-remotes::install("codecheckers/codecheck")
+remotes::install_github("codecheckers/codecheck")
 ```
 
 This will install the master version of our package.  Then quit R, and
