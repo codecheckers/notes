@@ -79,6 +79,43 @@ The R package can also help with submitting the certificate and metadata to
 zenodo.
 
 
+## Compile the certificate
+
+In the `codecheck/` folder, simply run `make` to generate
+codecheck.pdf.  Currently the difficult bit is importing the figures
+and tables into your codecheck, for which you need to look at previous
+examples.  I (SJE) am working on a simpler workflow.
+
+## Uploading to zenodo
+
+The R package contains code for uploading the metadata and certificate
+to Zenodo.  You don't need to use  this, but it should be quicker (and
+less error prone) than typing in the metadata.
+
+### Get a Zenodo token
+
+To communicate with R, you will first need to get an API token from
+Zenodo.  (If you have a working token, skip this step).
+
+1. Login to Zenodo with your orcid or github account:
+<https://zenodo.org/account/settings/applications/tokens/new/>
+2. Give a unique name, e.g. "codecheck" and under the scope, select
+   all three Scopes.
+3. HIt "Create" to get the access token (a long alphanumeric string).  Treat
+   this like a password and keep it safe.  
+4. Write it into a local file, or store it in a password manager, such
+   as [pass](https://www.passwordstore.org/).  Do not upload it to
+   github!! e.g. you could store the following in `~/zenodo-token.txt`
+   
+```
+abbbbabbbb897348979797981723894798798
+```
+
+5. Follow the steps in `codecheck/codecheck-zenodo.R` to (1) create a
+   new Zenodo record, (2) upload metadata (3) upload certificate.
+
+
+
 ## Getting help
 
 If you are stuck, don't hesitate to ping Stephen or Daniel with a
